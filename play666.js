@@ -104,10 +104,10 @@ async function cdpClick(client, x, y) {
   await delay(10000);
 
   try { await page.click('button._loginButton_oo0rk_15'); console.log('Clicked Login button'); } catch (e) { console.log('Login button not found'); }
-  await delay(3000);
+  await delay(10000);
 
   try { await page.click('button._loginButton_oo0rk_15'); console.log('Clicked Login button'); } catch (e) { console.log('Login button not found'); }
-  await delay(3000);
+  await delay(10000);
 
   try {
     await page.type('div:nth-of-type(1) > input', username);
@@ -115,7 +115,7 @@ async function cdpClick(client, x, y) {
   } catch (e) {
     console.log('Username input not found');
   }
-  await delay(3000);
+  await delay(10000);
 
   try {
     await page.type('div._passDropdownContainer_x3wte_29 input', password);
@@ -123,12 +123,12 @@ async function cdpClick(client, x, y) {
   } catch (e) {
     console.log('Password input not found');
   }
-  await delay(3000);
+  await delay(10000);
 
   await page.keyboard.press('Enter');
   console.log('Pressed Enter to login');
   try { await page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 15000 }); } catch (e) {}
-  await delay(3000);
+  await delay(10000);
 
   await page.goto('https://www.play666th.com/en-my/casino-landing', { waitUntil: 'domcontentloaded', timeout: 0 });
   console.log('Navigated to Dream Gaming after login');
@@ -150,7 +150,7 @@ async function cdpClick(client, x, y) {
         },
       });
     console.log('Clicked game in slot 10');
-    await delay(2000);
+    await delay(10000);
   }
 
   // ---------- Continue your logic after login here ----------
