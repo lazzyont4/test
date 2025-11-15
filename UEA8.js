@@ -127,7 +127,7 @@ async function cdpClick(client, x, y) {
     ])
       .setTimeout(timeout)
       .click({ offset: { x: 37.9, y: 8.3 } });
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -141,7 +141,7 @@ async function cdpClick(client, x, y) {
       .setTimeout(timeout)
       .fill(username);
     console.log('Entered username');
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -154,7 +154,7 @@ async function cdpClick(client, x, y) {
     ])
       .setTimeout(timeout)
       .click({ offset: { x: 34.1, y: 7.3 } });
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -168,7 +168,7 @@ async function cdpClick(client, x, y) {
       .setTimeout(timeout)
       .fill(password);
     console.log('Entered password');
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -176,7 +176,7 @@ async function cdpClick(client, x, y) {
     await targetPage.keyboard.down('Enter');
     await targetPage.keyboard.up('Enter');
     console.log('Pressed Enter to login');
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -186,7 +186,7 @@ async function cdpClick(client, x, y) {
       timeout: 0
     });
     console.log('Navigated to casino landing page');
-    await delay(2000);
+    await delay(10000);
   }
 
   {
@@ -205,7 +205,7 @@ async function cdpClick(client, x, y) {
         },
       });
     console.log('Clicked game in slot 10');
-    await delay(2000);
+    await delay(10000);
   }
 
   // ---------- Continue your logic after login here ----------
@@ -648,4 +648,5 @@ async function cdpClick(client, x, y) {
   await Promise.all([checkTimeAndRun(), testRunLoop()]);
 
   // end main
+
 })();
