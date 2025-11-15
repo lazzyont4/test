@@ -106,30 +106,30 @@ async function cdpClick(client, x, y) {
   // Fill username
   await page.type('#login', username);
   console.log('Filled Username');
-  await delay(2000);
+  await delay(10000);
 
   // Fill password
   await page.type('#password', password);
   console.log('Filled Passowrd');
-  await delay(2000);
+  await delay(10000);
 
   // Press Enter to login
   await page.keyboard.press('Enter');
   await page.waitForNavigation({ waitUntil: 'domcontentloaded' });
   console.log('Done Login');
-  await delay(3000);
+  await delay(10000);
 
   // 🔥 Instead of coordinate click, go directly to the Dream Gaming page
   await page.goto('https://www.me88prime.com/en-my/casino/dream-gaming', {
     waitUntil: 'domcontentloaded',
     timeout: 0
   });
-  await delay(3000);
+  await delay(10000);
 
   // Example: click play button
   try {
     await page.click('div.bg-content-section span.btn');
-    await delay(2000);
+    await delay(10000);
   } catch (e) {
     console.log('Play button not found.');
   }
