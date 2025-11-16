@@ -114,7 +114,7 @@ async function cdpClick(client, x, y) {
       timeout: 0
     });
     console.log('Opened casino landing page');
-    await delay(10000);
+    await delay(30000);
   }
 
   {
@@ -186,7 +186,7 @@ async function cdpClick(client, x, y) {
       timeout: 0
     });
     console.log('Navigated to casino landing page');
-    await delay(10000);
+    await delay(30000);
   }
 
   {
@@ -650,3 +650,4 @@ async function cdpClick(client, x, y) {
   // end main
 
 })();
+
