@@ -103,7 +103,7 @@ async function cdpClick(client, x, y) {
   // ---------- Steps 1-8: login and open game (unchanged) ----------
   await page.goto('https://www.ap33my.com/en-my', { waitUntil: 'domcontentloaded', timeout: 0 });
   console.log('Opened AP33 page');
-  await delay(10000);
+  await delay(30000);
 
   try { await page.click('button._loginButton_oo0rk_15'); console.log('Clicked Login button'); } catch (e) { console.log('Login button not found'); }
   await delay(10000);
@@ -136,7 +136,7 @@ async function cdpClick(client, x, y) {
       timeout: 0
     });
     console.log('Navigated to casino landing page');
-    await delay(10000);
+    await delay(30000);
   }
 
   {
@@ -599,6 +599,7 @@ async function cdpClick(client, x, y) {
 
   // end main
 })();
+
 
 
 
