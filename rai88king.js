@@ -101,7 +101,7 @@ async function cdpClick(client, x, y) {
   // ---------- Steps 1-8: login and open game (unchanged) ----------
   await page.goto('https://www.rai88king.com/en-my/home', { waitUntil: 'domcontentloaded', timeout: 0 });
   console.log('Opened Dream Gaming page');
-  await delay(10000);
+  await delay(30000);
 
   try { await page.click('button._loginButton_oo0rk_15'); console.log('Clicked Login button'); } catch (e) { console.log('Login button not found'); }
   await delay(10000);
@@ -132,7 +132,7 @@ async function cdpClick(client, x, y) {
 
   await page.goto('https://www.rai88king.com/en-my/casino-landing', { waitUntil: 'domcontentloaded', timeout: 0 });
   console.log('Navigated to Dream Gaming after login');
-  await delay(10000);
+  await delay(30000);
 
   {
     const targetPage = page;
