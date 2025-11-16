@@ -101,7 +101,7 @@ async function cdpClick(client, x, y) {
   // ---------- Steps 1-8: login and open game (unchanged) ----------
   await page.goto('https://www.me88prime.com/en-my/login', { waitUntil: 'domcontentloaded', timeout: 0 });
   console.log('Opened ME88');
-  await delay(10000);
+  await delay(30000);
 
   // Fill username
   await page.type('#login', username);
@@ -124,7 +124,7 @@ async function cdpClick(client, x, y) {
     waitUntil: 'domcontentloaded',
     timeout: 0
   });
-  await delay(10000);
+  await delay(30000);
 
   // Example: click play button
   try {
